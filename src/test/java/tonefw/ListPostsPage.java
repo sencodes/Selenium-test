@@ -12,15 +12,15 @@ public class ListPostsPage {
         switch (postType)
         {
             case Page:
-                LoginPage.driver.findElement(By.id("menu-pages")).click();
-                LoginPage.driver.findElement(By.linkText("All Pages")).click();
+                DriverClass.driver.findElement(By.id("menu-pages")).click();
+                DriverClass.driver.findElement(By.linkText("All Pages")).click();
                 break;
         }
 
     }
 
     public void selectPost(String s) {
-        LoginPage.driver.findElement(By.linkText(s)).click();
+        DriverClass.driver.findElement(By.linkText(s)).click();
 
     }
 

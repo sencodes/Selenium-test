@@ -1,6 +1,8 @@
 package tonetest;
 
 import org.junit.After;
+import org.junit.Before;
+import tonefw.DriverClass;
 import tonefw.LoginPage;
 
 /**
@@ -8,9 +10,15 @@ import tonefw.LoginPage;
  */
 public class WordpressTest {
 
+    @Before
+    public void testInitialize(){
+        DriverClass driverclass = new DriverClass();
+        driverclass.initialize();
+    }
+
     @After
     public void cleanUp() {
-        LoginPage.driver.quit();
+        DriverClass.driver.quit();
     }
 
 }

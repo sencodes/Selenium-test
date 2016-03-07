@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by SenthilKumar on 09/02/2016.
  */
-public class PageTests {
+public class PageTests extends WordpressTest{
 
     @Test
     public void userCanEditAPage() throws InterruptedException {

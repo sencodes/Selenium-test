@@ -21,7 +21,7 @@ public class DashboardPage {
         else textIsDisplaying = Boolean.FALSE;
         System.out.println(textIsDisplaying);
         return textIsDisplaying;*/
-        List<WebElement> dashBoard = LoginPage.driver.findElements(By.cssSelector("div.wrap>h1"));
+        List<WebElement> dashBoard = DriverClass.driver.findElements(By.cssSelector("div.wrap>h1"));
         if(dashBoard.size()!=0){
             return true;}
             else return false;

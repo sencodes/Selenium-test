@@ -2,11 +2,9 @@ package tonetest;
 
 import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
-import tonefw.DashboardPage;
-import tonefw.LoginPage;
-import tonefw.NewPostPage;
-import tonefw.PostPage;
+import tonefw.*;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
@@ -14,7 +12,13 @@ import static junit.framework.Assert.assertTrue;
 /**
  * Created by SenthilKumar on 29/01/2016.
  */
-public class CreatePostTests {
+public class CreatePostTests extends WordpressTest{
+
+    @Before
+    public void testInitialize(){
+        DriverClass driverclass = new DriverClass();
+        driverclass.initialize();
+    }
 
     @Test
     public void userCanCreatePost() throws InterruptedException {
