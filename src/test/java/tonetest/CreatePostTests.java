@@ -14,17 +14,9 @@ import static junit.framework.Assert.assertTrue;
  */
 public class CreatePostTests extends WordpressTest{
 
-    @Before
-    public void testInitialize(){
-        DriverClass driverclass = new DriverClass();
-        driverclass.initialize();
-    }
-
     @Test
     public void userCanCreatePost() throws InterruptedException {
-        LoginPage loginPage = new LoginPage();
-        loginPage.goTo();
-        loginPage.loginAs("testdirect143").withPassword("Tasteofindia123!").login();
+
         Assert.assertTrue("Expected dashboard page is not displayed", DashboardPage.isDisplaying());
 
 
@@ -39,9 +31,5 @@ public class CreatePostTests extends WordpressTest{
 
     }
 
-//    @After
- //   public void cleanUp(){
- //       LoginPage.driver.quit();
 
- //   }
 }

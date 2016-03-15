@@ -14,9 +14,7 @@ public class PageTests extends WordpressTest{
 
     @Test
     public void userCanEditAPage() throws InterruptedException {
-        LoginPage loginPage = new LoginPage();
-        loginPage.goTo();
-        loginPage.loginAs("testdirect143").withPassword("Tasteofindia123!").login();
+
         Assert.assertTrue("Expected dashboard page is not displayed", DashboardPage.isDisplaying());
 
         ListPostsPage listPostsPage = new ListPostsPage();
@@ -34,10 +32,6 @@ public class PageTests extends WordpressTest{
 
     }
 
-//    @After
-    //   public void cleanUp(){
-    //       LoginPage.driver.quit();
 
-    //   }
 
 }
