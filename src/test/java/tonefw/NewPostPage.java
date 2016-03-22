@@ -18,7 +18,6 @@ public class NewPostPage {
         Thread.sleep(2000);
         DriverClass.driver.findElement(By.partialLinkText("Add New")).click();
 
-
     }
 
     public static String theHeadingDisplayed() {
@@ -44,7 +43,7 @@ public class NewPostPage {
         DriverClass.driver.switchTo().frame("content_ifr");
         DriverClass.driver.switchTo().activeElement().sendKeys(newPostBody);
         DriverClass.driver.switchTo().defaultContent();
-       // Thread.sleep(1000);
+        //publish button click does not work - hence introduced Thread.sleep here - inspite of the publish fluent wait
         Thread.sleep(5000);
         WebElement publish = findElement(DriverClass.driver, By.id("publish"), 5);
         publish.click();
