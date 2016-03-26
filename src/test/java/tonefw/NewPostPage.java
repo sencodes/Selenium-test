@@ -13,10 +13,15 @@ public class NewPostPage {
     String newPostTitle;
     String newPostBody;
 
-    public void goTo() throws InterruptedException {
-        DriverClass.driver.findElement(By.cssSelector("li[id='menu-posts']>a>div.wp-menu-name")).click();
-        Thread.sleep(2000);
-        DriverClass.driver.findElement(By.partialLinkText("Add New")).click();
+    public static void goTo() throws InterruptedException {
+
+        //CLASS CHAINING
+        LeftNavigation.Posts.AddNew.Select();
+
+        //Please note that the above line of class chaining can be replaced with the following 2 lines of method chaining:
+        //LeftNavigationX leftNavigationX = new LeftNavigationX();
+        //leftNavigationX.Posts().AddNew().Select();
+
 
     }
 
@@ -72,5 +77,6 @@ public class NewPostPage {
 
 
 }
+
 
 

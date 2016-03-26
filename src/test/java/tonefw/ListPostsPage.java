@@ -12,8 +12,16 @@ public class ListPostsPage {
         switch (postType)
         {
             case Page:
-                DriverClass.driver.findElement(By.id("menu-pages")).click();
-                DriverClass.driver.findElement(By.linkText("All Pages")).click();
+
+                //CLASS CHAINING
+                LeftNavigation.Pages.AllPages.Select();
+                //Please note that the above line of class chaining can be replaced with the following 2 lines of method chaining:
+                //LeftNavigationX leftNavigationX = new LeftNavigationX();
+                //leftNavigationX.Pages().AllPages().Select();
+
+
+                //DriverClass.driver.findElement(By.id("menu-pages")).click();
+                //DriverClass.driver.findElement(By.linkText("All Pages")).click();
                 break;
         }
 
