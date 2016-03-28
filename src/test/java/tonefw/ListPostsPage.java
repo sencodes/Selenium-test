@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
  */
 public class ListPostsPage {
 
-    public static void goTo(PostType postType){
+    public static void goTo(PostType postType) throws InterruptedException {
 
         switch (postType)
         {
