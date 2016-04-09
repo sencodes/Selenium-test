@@ -13,7 +13,7 @@ public class MenuSelector {
 
         //DriverClass.driver.findElement(By.cssSelector(topLevelMenuCSS)).click();
         Thread.sleep(2500);
-        DriverClass.driver.findElement(By.id(topLevelMenuCSS)).click();
+        DriverClass.driver.findElement(By.cssSelector(topLevelMenuCSS)).click();
         Thread.sleep(2000);
         DriverClass.driver.findElement(By.partialLinkText(subMenuPartialLinkText)).click();
     }

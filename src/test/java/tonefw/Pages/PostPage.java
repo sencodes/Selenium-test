@@ -8,6 +8,7 @@ import static WordpressTests.Utilities.WordpressTest.findElement;
 
 /**
  * Created by SenthilKumar on 29/01/2016.
+ * This is to view the newly added post using the Add button from the NewPostPage
  */
 public class PostPage {
 

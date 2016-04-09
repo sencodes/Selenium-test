@@ -22,10 +22,13 @@ public class CreatePostTests extends WordpressTest {
 
 
         NewPostPage newPostPage = new NewPostPage();
+        //Goto the New Post Page and then click on Add new button
         newPostPage.goTo();
         assertEquals("test","Add New Post",NewPostPage.theHeadingDisplayed());
+        //Create a new post with the specified Title and specified Body and then click 'Publish' button
         newPostPage.createPost("This is a Test".toUpperCase()).withBody("This is the body").publish();
 
+        //Goto the View Post page
         PostPage postPage = new PostPage();
         postPage.goTo();
         Assert.assertEquals("New post is not created", "This is a Test".toUpperCase(), postPage.displayedHeaderText());
