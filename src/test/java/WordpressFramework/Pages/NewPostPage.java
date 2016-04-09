@@ -1,9 +1,9 @@
-package tonefw.Pages;
+package WordpressFramework.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import tonefw.Selenium.DriverClass;
-import tonefw.Navigation.LeftNavigation;
+import WordpressFramework.Selenium.DriverClass;
+import WordpressFramework.Navigation.LeftNavigation;
 
 import static WordpressTests.Utilities.WordpressTest.findElement;
 

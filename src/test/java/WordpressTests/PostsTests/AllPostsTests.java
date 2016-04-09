@@ -1,15 +1,10 @@
 package WordpressTests.PostsTests;
 
 import WordpressTests.Utilities.WordpressTest;
-import javafx.geometry.Pos;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import tonefw.Pages.ListPostsPage;
-import tonefw.Pages.NewPostPage;
-import tonefw.Pages.PostPage;
-import tonefw.Selenium.DriverClass;
+import WordpressFramework.Pages.ListPostsPage;
+import WordpressFramework.Pages.NewPostPage;
 
 /**
  * Created by SenthilKumar on 28/03/2016.

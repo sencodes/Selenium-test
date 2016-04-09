@@ -3,9 +3,9 @@ package WordpressTests.SmokeTests;
 import WordpressTests.Utilities.WordpressTest;
 import org.junit.Assert;
 import org.junit.Test;
-import tonefw.Pages.DashboardPage;
-import tonefw.Pages.ListPostsPage;
-import tonefw.Pages.NewPostPage;
+import WordpressFramework.Pages.DashboardPage;
+import WordpressFramework.Pages.ListPostsPage;
+import WordpressFramework.Pages.NewPostPage;
 
 import static junit.framework.Assert.assertEquals;
 

@@ -1,13 +1,10 @@
-package tonefw.Pages;
+package WordpressFramework.Pages;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import tonefw.Selenium.DriverClass;
-import tonefw.Navigation.LeftNavigation;
+import WordpressFramework.Selenium.DriverClass;
+import WordpressFramework.Navigation.LeftNavigation;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package tonefw.Pages;
+package WordpressFramework.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import tonefw.Selenium.DriverClass;
+import WordpressFramework.Selenium.DriverClass;
 
 
 import java.util.List;

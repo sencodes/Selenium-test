@@ -1,7 +1,7 @@
-package tonefw.Pages;
+package WordpressFramework.Pages;
 
 import org.openqa.selenium.By;
-import tonefw.Selenium.DriverClass;
+import WordpressFramework.Selenium.DriverClass;
 import WordpressTests.Utilities.WordpressTest;
 
 /**

@@ -3,7 +3,7 @@ package WordpressTests.SmokeTests;
 import WordpressTests.Utilities.WordpressTest;
 import org.junit.Assert;
 import org.junit.Test;
-import tonefw.Pages.DashboardPage;
+import WordpressFramework.Pages.DashboardPage;
 
 /**
  * Created by SenthilKumar on 25/01/2016.

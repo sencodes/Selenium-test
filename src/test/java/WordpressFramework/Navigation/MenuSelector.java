@@ -1,7 +1,7 @@
-package tonefw.Navigation;
+package WordpressFramework.Navigation;
 
 import org.openqa.selenium.By;
-import tonefw.Selenium.DriverClass;
+import WordpressFramework.Selenium.DriverClass;
 
 /**
  * Created by SenthilKumar on 26/03/2016.

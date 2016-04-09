@@ -1,4 +1,4 @@
-package tonefw.Navigation;
+package WordpressFramework.Navigation;
 
 /**
  * Created by SenthilKumar on 26/03/2016.
